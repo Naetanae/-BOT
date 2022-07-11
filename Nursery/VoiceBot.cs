@@ -91,7 +91,7 @@ namespace Nursery {
 			try {
 				await instance.discord.LoginAsync(TokenType.Bot, Config.Instance.MainConfig.Token);
 				await instance.discord.StartAsync();
-				await instance.discord.SetGameAsync("Nursery");
+				await instance.discord.SetGameAsync("棒読みBOT");
 			} catch (Exception e) {
 				// TRANSLATORS: Log message. Initializing Nursery.
 				Logger.Log(T._("Could not login to Discord. Please check bot account and its token."));
